@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('feedback', function (Blueprint $table) {
             $table->id();
+            $table->string('order_id');
+            $table->foreign('order_id')->references('id')->on('order');
+            $table->integer('rating');
+            $table->text('comment');
             $table->timestamps();
         });
     }

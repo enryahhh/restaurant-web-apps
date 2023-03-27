@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('ingredient_supplies', function (Blueprint $table) {
             $table->id();
+            $table->string('supplier_name');
+            $table->date('supply_date');
+            $table->foreignId('ingredient_id')->constrained('ingredients');
+            $table->integer('quantity_supplied');
+            $table->decimal('unit_cost', 8, 2);
             $table->timestamps();
         });
     }

@@ -14,7 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('order', function (Blueprint $table) {
-            $table->id();
+            $table->string('id')->primary();
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('meja_id')->constrained('meja');
+            $table->date('order_date');
+            $table->string('status');
+            $table->decimal('total_price', 8, 2);
+            $table->text('description');
             $table->timestamps();
         });
     }
