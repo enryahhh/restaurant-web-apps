@@ -16,11 +16,11 @@ const showingNavigationDropdown = ref(false);
             <div class="flex">
                 <Sidebar></Sidebar>
 
-                <div class="w-screen z-1 pl-32">
-                    <nav class="bg-slate-500 border-b border-gray-100 -ml-32">
+                <div class="w-screen pl-32">
+                    <nav class="bg-white shadow-lg -ml-32">
                         <!-- Primary Navigation Menu -->
-                        <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                            <div class="flex justify-end h-16">
+                        <div class="mx-auto fixed z-10 ml-32 right-0 left-0">
+                            <div class="flex justify-end h-16 bg-white border-black shadow-lg mb-5">
         
                                 <div class="hidden sm:flex sm:items-center sm:ml-6">
                                     <!-- Settings Dropdown -->
@@ -125,13 +125,13 @@ const showingNavigationDropdown = ref(false);
                     
                     <!-- Page Heading -->
                     <header class="bg-white shadow" v-if="$slots.header">
-                        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 mt-16">
                             <slot name="header" />
                         </div>
                     </header>
                     
                     <!-- Page Content -->
-                    <main class=" bg-red-200">
+                    <main class="">
                         <slot />
                     </main>
                 </div>
