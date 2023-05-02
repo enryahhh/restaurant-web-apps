@@ -38,7 +38,7 @@
         50 orders</div>
     </div>
 
-    <a class="bg-black text-white block w-full text-center rounded-md px-5 py-1" href="#">Order</a>
+    <a class="bg-black text-white block w-full text-center rounded-md px-5 py-1" href="#">Add To Cart</a>
   </div>
 </div>
 

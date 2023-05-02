@@ -13,9 +13,9 @@ import { Link } from '@inertiajs/vue3';
                 />
             </Link>
         <ul class="text-gray-400 px-6">
-            <li class="mb-4"><a href="#" class="text-white hover:text-gray-300">Home</a></li>
-            <li class="mb-4"><a href="#" class="text-white hover:text-gray-300">Dashboard</a></li>
-            <li class="mb-4"><a href="#" class="text-white hover:text-gray-300">Profile</a></li>
+            <li class="mb-4"><a href="/dashboard" class="text-white hover:text-gray-300">Home</a></li>
+            <li class="mb-4"><a href="/orders" class="text-white hover:text-gray-300">Orders</a></li>
+            <li class="mb-4"><a href="#" class="text-white hover:text-gray-300">Report</a></li>
             <li class="mb-4"><a href="#" class="text-white hover:text-gray-300">Settings</a></li>
         </ul>
     </div>

@@ -17,7 +17,7 @@ import { computed, onMounted, onUnmounted, ref } from 'vue';
 const isOpen = ref(false);
 </script>
 <template>
-    <div class="relative">
+    <div class="relative cursor-pointer">
       <div
         @click="isOpen = !isOpen"
         class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200 focus:outline-none focus:shadow-outline-gray focus:bg-gray-200"
@@ -36,7 +36,7 @@ const isOpen = ref(false);
           ></path>
         </svg>
     </div>
-    <div v-show="isOpen" class="fixed inset-0 z-40" @click="isOpen = false"></div>
+    <div v-show="isOpen" class="fixed inset-0 z-0" @click="isOpen = false"></div>
     <transition
             enter-active-class="transition ease-out duration-200"
             enter-from-class="transform opacity-0 scale-95"
@@ -49,7 +49,7 @@ const isOpen = ref(false);
         v-show="isOpen"
         class="absolute z-10 w-full mt-2 bg-white rounded-md shadow-lg"
       >
-        <div class="flex flex-col max-h-60 overflow-y-auto">
+        <div class="flex flex-col max-h-60 overflow-y-auto z-50">
           <label
             v-for="(item, index) in items"
             :key="index"
