@@ -16,7 +16,9 @@ return new class extends Migration
         Schema::create('meja', function (Blueprint $table) {
             $table->id();
             $table->string('no_meja',3);
+            $table->string('description');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

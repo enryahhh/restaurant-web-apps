@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('unit_of_measurement');
             $table->integer('quantity')->default(0);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

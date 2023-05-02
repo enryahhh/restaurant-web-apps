@@ -4,9 +4,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-use App\Http\UserController;
-use App\Http\MenuController;
-use App\Http\MejaController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\MejaController;
 
 /*
 |--------------------------------------------------------------------------

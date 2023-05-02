@@ -16,9 +16,13 @@ return new class extends Migration
         Schema::create('menu', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->smallInteger('stock');
             $table->text('description');
+            $table->text('gambar');
             $table->decimal('price', 8, 2);
+            $table->string('category');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
